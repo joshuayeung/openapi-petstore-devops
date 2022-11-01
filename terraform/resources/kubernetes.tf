@@ -3,7 +3,7 @@ terraform {
     organization = "joshuayeungzuhlke"
 
     workspaces {
-      name = "openapi-petstore-devops"
+      name = "openapi-petstore"
     }
   }
 
@@ -64,7 +64,7 @@ resource "kubernetes_deployment" "openapi_petstore" {
   }
 
   spec {
-    replicas = 2
+    replicas = 1
     selector {
       match_labels = {
         App = "ScalableOpenApiPetstoreExample"
