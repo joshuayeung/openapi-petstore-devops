@@ -3,7 +3,7 @@ terraform {
     organization = "joshuayeungzuhlke"
 
     workspaces {
-      name = "openapi-petstore-devops"
+      name = "openapi-petstore"
     }
   }
 
