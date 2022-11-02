@@ -23,7 +23,7 @@ provider "helm" {
         local.cluster_name
       ]
     }
-}
+  }
 }
 
 module "eks-cluster-autoscaler" {
