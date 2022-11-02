@@ -3,13 +3,8 @@ name: "Resources"
 on:
   workflow_run:
     workflows: [ "Cluster" ]
-    branches: [ master ]
     types:
       - completed
-  push:
-    branches:
-      - master
-  pull_request:
 
 jobs:
   deploy_resources:
