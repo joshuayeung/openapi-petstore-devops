@@ -64,7 +64,7 @@ resource "kubernetes_deployment" "openapi_petstore" {
   }
 
   spec {
-    replicas = 1
+    replicas = 2
     selector {
       match_labels = {
         App = "ScalableOpenApiPetstoreExample"
